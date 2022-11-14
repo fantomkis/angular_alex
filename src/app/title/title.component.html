@@ -1,3 +1,4 @@
-<input type="text" (input)="onInput($event)" >
+<p>Напиши заголовок і натисни ентер</p>
+<input class="input" type="text" (keyup.enter)="onInput($event)" placeholder="Напиши" >
 
 <h2>{{inputValue}}</h2>

@@ -7,11 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NumberComponent implements OnInit {
 
-  counter = 5;
+  counter = 0;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onClick(){
+    this.counter = this.counter + 1;
+
   }
 
 }
