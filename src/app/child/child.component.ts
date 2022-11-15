@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, ElementRef, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-child',
@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./child.component.scss']
 })
 export class ChildComponent implements OnInit {
+  // @ContentChild('children') children: ElementRef;
 
   constructor() { }
 
   ngOnInit(): void {
+    // console.log(this.children)
   }
 
 }
