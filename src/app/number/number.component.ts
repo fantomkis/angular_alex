@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class NumberComponent implements OnInit {
 
   counter = 0;
+  // number
 
   constructor() { }
 
