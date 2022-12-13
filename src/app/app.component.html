@@ -1,19 +1,23 @@
+<h1 (click)="onClick()">{{title}}</h1>
 
 
-<h1>{{title}}</h1>
+
+<app-number [counter]="counter"></app-number>
 
 <app-title></app-title>
-<app-number>
-    <div #children>
-        <h2>Child</h2>
-        <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, quaerat?</p>
-        <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, quaerat?</p>
-    </div>
-</app-number>
+
+
+
+<div #children>
+    <h2>Child</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, quaerat?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, quaerat?</p>
+</div>
+
 <app-child>
     <div #children>
         <h2>Child</h2>
-        <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, quaerat?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, quaerat?</p>
     </div>
 
 

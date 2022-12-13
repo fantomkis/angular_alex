@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 
 @Component({
   selector: 'app-number',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./number.component.scss']
 })
 export class NumberComponent implements OnInit {
-
+@Input()
   counter = 0;
 
   constructor() { }
@@ -14,9 +14,9 @@ export class NumberComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onClick(){
-    this.counter = this.counter + 1;
+  // onClick(){
+  //   this.counter = this.counter + 1;
 
-  }
+  // }
 
 }
