@@ -6,7 +6,8 @@ import { Component, OnInit,Input } from '@angular/core';
   styleUrls: ['./number.component.scss']
 })
 export class NumberComponent implements OnInit {
-@Input()
+  @Input()
+  
   counter = 0;
 
   constructor() { }

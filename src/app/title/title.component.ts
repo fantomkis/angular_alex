@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-title',
@@ -6,13 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./title.component.scss']
 })
 export class TitleComponent implements OnInit {
-inputValue = ''
+  // inputValue = ''
+   @Input() title:any;
   constructor() { }
-
+ 
   ngOnInit(): void {
   }
-onInput (event: any){
-    console.log(event)
-  this.inputValue = event.target.value;
-}
+// onInput (event: any){
+//     console.log(event)
+//   this.inputValue = event.target.value;
+// }
 }
