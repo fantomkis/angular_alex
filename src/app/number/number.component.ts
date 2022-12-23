@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, SimpleChanges } from '@angular/core';
 
 
 
@@ -9,14 +9,15 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./number.component.scss']
 })
 export class NumberComponent implements OnInit {
-  @Input()
-  
-  counter = 0;
+  @Input() counter: number = 0;
+  isNoun = this.counter % 2 === 0;
 
   constructor() { }
 
   ngOnInit(): void {
   }
+
+  
 
   // onClick(){
   //   this.counter = this.counter + 1;
