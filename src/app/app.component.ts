@@ -7,7 +7,7 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class AppComponent implements OnInit{
   @Input()
-    counter = 0;
+  counter: number = 0;
    public title: string = '';
 
   ngOnInit() {

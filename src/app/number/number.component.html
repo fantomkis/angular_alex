@@ -1,6 +1,27 @@
-<p>Клікни на заголовок і число збільшиться</p>
+<p>Click on the title and the number will increase</p>
 
 
 <h3>{{counter}}</h3>
 
-<ng-content></ng-content>
+
+
+<!-- <div *ngif="counter else elseblock">
+    Counter is noun
+</div>
+<div #elseblock>
+    Counter is not noun
+</div> -->
+
+<!-- <ng-container *ngif=" counter > 2 else elseblock">
+    Counter is noun
+</ng-container>
+<div #elseblock>
+    Counter is not noun
+</div> -->
+
+<ng-container *ngIf="counter % 2 === 0 else elseblock">
+    Counter is noun
+</ng-container>
+<ng-template #elseblock>
+    Counter is not noun
+</ng-template>
