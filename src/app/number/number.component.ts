@@ -21,9 +21,6 @@ export class NumberComponent implements OnInit, OnChanges {
     this.isNoun = changes['counter'].currentValue % 2 === 0;
   }
 
-  // onClick(){
-  //   this.counter = this.counter + 1;
-
-  // }
+ 
 
 }

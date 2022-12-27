@@ -3,20 +3,6 @@
 
 <h3>{{ counter }}</h3>
 
-<!-- <div *ngif="counter else elseblock">
-    Counter is noun
-</div>
-<div #elseblock>
-    Counter is not noun
-</div> -->
-
-<!-- <ng-container *ngif=" counter > 2 else elseblock">
-    Counter is noun
-</ng-container>
-<div #elseblock>
-    Counter is not noun
-</div> -->
-
 <ng-container *ngIf="isNoun; else elseblock">
     Counter is noun
 </ng-container>
