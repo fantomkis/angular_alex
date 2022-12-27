@@ -1,2 +1,10 @@
 <p>child works!</p>
-<ng-content></ng-content>
+
+<div>
+    <h1>Default child</h1>
+    <ng-content></ng-content>
+</div>
+<div>
+    <h1>Atrebut child</h1>
+    <ng-content select="[children]"></ng-content>
+</div>
