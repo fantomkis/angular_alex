@@ -1,8 +1,5 @@
-<input [(ngModel)]="title" type="text" required placeholder="Titel">
+<h1>Input</h1>
 
-<p>Value : {{title}}</p>
-<!-- <p>Valid: {{ctrl.valid}}</p> -->
+<input [(ngModel)]="title" type="text" required placeholder="Titel" class="input">
 
-<button (click)="setValue"> Set value </button>
-
-<p>value works!</p>
+<p class="value">Value : {{title}}</p>
