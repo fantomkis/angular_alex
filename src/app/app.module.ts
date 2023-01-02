@@ -9,6 +9,7 @@ import { ValueComponent } from './value/value.component';
 import { FormsModule } from '@angular/forms';
 import { DeficePipe } from './pipes/defice.pipe';
 import { PipeTitelComponent } from './pipe-titel/pipe-titel.component';
+import { ColorDirective } from './directive/color.directive';
 @NgModule({
   exports: [NumberComponent],
   declarations: [
@@ -19,6 +20,7 @@ import { PipeTitelComponent } from './pipe-titel/pipe-titel.component';
     ValueComponent,
     DeficePipe,
     PipeTitelComponent,
+    ColorDirective
     
    
   ],
