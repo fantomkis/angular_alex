@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { TitleComponent } from './title/title.component';
 import { NumberComponent } from './number/number.component';
 import { ChildComponent } from './child/child.component';
+import { ValueComponent } from './value/value.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   exports: [NumberComponent],
@@ -13,12 +15,14 @@ import { ChildComponent } from './child/child.component';
     TitleComponent,
     NumberComponent,
     ChildComponent,
+    ValueComponent,
     
    
   ],
   imports: [
     BrowserModule,
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
