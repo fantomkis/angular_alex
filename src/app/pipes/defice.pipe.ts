@@ -4,8 +4,8 @@ import { Pipe, PipeTransform } from "@angular/core";
 })
 
 export class DeficePipe implements PipeTransform {
-        transform(str: string, pow: string ='-'): string {
-            return str + pow;
+        transform(str: string, pow: string ='Pavel-'): string {
+            return pow+ str ;
     
 } } {
 

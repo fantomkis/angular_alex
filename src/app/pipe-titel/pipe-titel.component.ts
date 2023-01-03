@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pipe-titel.component.scss']
 })
 export class PipeTitelComponent implements OnInit {
-name : string= 'Pavel'
+name : string= 'hello veb'
   constructor() { }
 
   ngOnInit(): void {
