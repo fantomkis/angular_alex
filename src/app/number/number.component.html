@@ -1,6 +1,9 @@
-<p>Клікни на заголовок і число збільшиться</p>
+<p [ngClass]="{'green': isNoun, 'red': !isNoun}">Click on the title and the number will increase
+</p>
 
+<h3>{{ counter }}</h3>
 
-<h3>{{counter}}</h3>
-
-<ng-content></ng-content>
+<ng-container *ngIf="counter % 2 === 0; else elseblock">
+    Counter is noun
+</ng-container>
+<ng-template #elseblock> Counter is not noun </ng-template>
