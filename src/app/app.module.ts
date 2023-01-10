@@ -6,6 +6,8 @@ import { TitleComponent } from './title/title.component';
 import { NumberComponent } from './number/number.component';
 import { ChildComponent } from './child/child.component';
 import { DeficePipe } from './pipes/defices.pipe';
+import { SocialService } from './services/socialService.service';
+import { SociumComponent } from './socium/socium.component';
 
 @NgModule({
   exports: [NumberComponent],
@@ -14,7 +16,8 @@ import { DeficePipe } from './pipes/defices.pipe';
     TitleComponent,
     NumberComponent,
     ChildComponent,
-    DeficePipe
+    DeficePipe,
+    SociumComponent
     
    
   ],
@@ -22,7 +25,9 @@ import { DeficePipe } from './pipes/defices.pipe';
     BrowserModule,
     CommonModule
   ],
-  providers: [],
+  providers: [
+    SocialService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
