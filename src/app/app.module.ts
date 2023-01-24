@@ -8,6 +8,14 @@ import { ChildComponent } from './child/child.component';
 import { DeficePipe } from './pipes/defices.pipe';
 import { SocialService } from './services/socialService.service';
 import { SociumComponent } from './socium/socium.component';
+import { AppRoutingMobule } from './app-routing.module';
+import { FamilyComponent } from './family/family.component';
+import { FriendsComponent } from './friends/friends.component';
+
+import { ErorrComponent } from './erorr/erorr.component';
+import { HomeComponent } from './home/home.component';
+import { JustPeopleComponent } from './just-people/just-people.component';
+import { CloseFriendsComponent } from './close-friends/close-friends.component';
 
 @NgModule({
   exports: [NumberComponent],
@@ -17,13 +25,21 @@ import { SociumComponent } from './socium/socium.component';
     NumberComponent,
     ChildComponent,
     DeficePipe,
-    SociumComponent
+    SociumComponent,
+    FamilyComponent,
+    FriendsComponent,
+
+    ErorrComponent,
+    HomeComponent,
+    JustPeopleComponent,
+   
     
    
   ],
   imports: [
     BrowserModule,
-    CommonModule
+    CommonModule,
+    AppRoutingMobule
   ],
   providers: [
     SocialService

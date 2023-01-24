@@ -5,9 +5,8 @@ import { SocialService } from '../services/socialService.service';
   selector: 'app-socium',
   templateUrl: './socium.component.html',
   styleUrls: ['./socium.component.scss'],
-   providers: [
-    SocialService
-  ],
+   providers: [ SocialService
+],
 })
 export class SociumComponent implements OnInit {
 

@@ -1,18 +1,8 @@
-<h1 (click)="onClick()">{{title}}</h1>
-
-
-
+<!-- <h1 (click)="onClick()">{{title}}</h1>
 <app-number [counter]="counter"></app-number>
 
 <app-title [title]="title"></app-title>
-
-
-
-
-
 <app-child>
-
-
     <div>
         <h2>Child 1</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, quaerat?</p>
@@ -23,5 +13,16 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, quaerat?</p>
     </div>
 
-</app-child>
-<app-socium></app-socium>
+</app-child> -->
+<nav class="navbar">
+    <h1 class="title" href="#">My Socium Nav</h1>
+    <ul class="nav_list">
+        <li class="nav_item"><a class="nav_link" routerLink="/">Home</a></li>
+        <li class="nav_item"><a class="nav_link" routerLink="/family">Family</a></li>
+        <li class="nav_item"><a class="nav_link" routerLink="/friends">Friends</a></li>
+        <li class="nav_item"><a class="nav_link" routerLink="/just-people">Close Friends</a></li>
+        <li class="nav_item"><a class="nav_link" routerLink="/closee-friends">Just People</a></li>
+    </ul>
+</nav>
+<router-outlet></router-outlet>
+<!-- <app-socium></app-socium> -->
