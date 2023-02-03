@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SocialService } from '../services/socialService.service';
 
 @Component({
   selector: 'app-just-people',
@@ -7,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class JustPeopleComponent implements OnInit {
 
-  constructor() { }
+   constructor(protected serviceSoc: SocialService) { }
+   social =  this.serviceSoc.social.justPeople
 
   ngOnInit(): void {
   }

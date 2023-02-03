@@ -11,6 +11,7 @@ import { SocialService } from '../services/socialService.service';
 export class FriendsComponent implements OnInit {
 
   constructor(protected serviceSoc: SocialService) { }
+   social =  this.serviceSoc.social.friends
 
   ngOnInit(): void {
   }

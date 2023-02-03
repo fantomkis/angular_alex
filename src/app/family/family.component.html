@@ -1,38 +1,9 @@
 <ul class="social_list">
-    <li>
-        <img src={{serviceSoc.social.family.ura.img}} width="200" alt="">
-        <h2 class="name">{{serviceSoc.social.family.ura.name}}</h2>
-        <h3 class="agre"> Agre:{{serviceSoc.social.family.ura.agre}}</h3>
-        <p class="prof">Work: {{serviceSoc.social.family.ura.prof}}</p>
+    <li *ngFor="let n of social ">
+        <img src={{n.img}} width="200" alt="">
+        <h2 class="name">{{n.name}}</h2>
+        <h3 class="agre"> Agre:{{n.age}}</h3>
+        <p class="prof">Work: {{n.prof}}</p>
         <p class="par"></p>
     </li>
-    <li>
-        <img src={{serviceSoc.social.family.dasha.img}} width="200" alt="">
-        <h2 class="name">{{serviceSoc.social.family.dasha.name}}</h2>
-        <h3 class="agre"> Agre:{{serviceSoc.social.family.dasha.agre}}</h3>
-        <p class="prof"> Work: {{serviceSoc.social.family.dasha.prof}}</p>
-        <p class="par"></p>
-    </li>
-    <li>
-        <img src={{serviceSoc.social.family.leonid.img}} width="200" alt="">
-        <h2 class="name">{{serviceSoc.social.family.leonid.name}}</h2>
-        <h3 class="agre">{{serviceSoc.social.family.leonid.agre}}</h3>
-        <p class="prof"> Work:{{serviceSoc.social.family.leonid.prof}}</p>
-        <p class="par"></p>
-    </li>
-    <li>
-        <img src={{serviceSoc.social.family.nata.img}} width="200" alt="">
-        <h2 class="name">{{serviceSoc.social.family.nata.name}}</h2>
-        <h3 class="agre">Agre: {{serviceSoc.social.family.nata.agre}}</h3>
-        <p class="prof">Work: {{serviceSoc.social.family.nata.prof}}</p>
-        <p class="par"></p>
-    </li>
-    <li>
-        <img src={{serviceSoc.social.family.gMam.img}} width="200" alt="">
-        <h2 class="name">{{serviceSoc.social.family.gMam.name}}</h2>
-        <h3 class="agre">Agre: {{serviceSoc.social.family.gMam.agre}}</h3>
-        <p class="prof">Work: {{serviceSoc.social.family.gMam.prof}}</p>
-        <p class="par"></p>
-    </li>
-
 </ul>

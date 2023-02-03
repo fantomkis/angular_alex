@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SocialService } from '../services/socialService.service';
 
 @Component({
   selector: 'app-close-friends',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CloseFriendsComponent implements OnInit {
 
-  constructor() { }
+   constructor(protected serviceSoc: SocialService) { }
+   social =  this.serviceSoc.social.closeFriends
+
 
   ngOnInit(): void {
   }

@@ -8,7 +8,11 @@ import { SocialService } from '../services/socialService.service';
 })
 export class FamilyComponent implements OnInit {
 
-   constructor(protected serviceSoc: SocialService) { }
+  constructor(protected serviceSoc: SocialService) { 
+    
+   
+  }
+   social =  this.serviceSoc.social.family
 
   ngOnInit(): void {
   }
