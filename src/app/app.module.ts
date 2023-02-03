@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { TitleComponent } from './title/title.component';
 import { NumberComponent } from './number/number.component';
 import { ChildComponent } from './child/child.component';
+
 import { DeficePipe } from './pipes/defices.pipe';
 import { SocialService } from './services/socialService.service';
 import { SociumComponent } from './socium/socium.component';
@@ -16,6 +17,7 @@ import { JustPeopleComponent } from './just-people/just-people.component';
 import { CloseFriendsComponent } from './close-friends/close-friends.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
+
 @NgModule({
   exports: [NumberComponent],
   declarations: [
@@ -23,6 +25,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     TitleComponent,
     NumberComponent,
     ChildComponent,
+
     DeficePipe,
     SociumComponent,
     FamilyComponent,
@@ -32,16 +35,26 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     PageNotFoundComponent,
     CloseFriendsComponent,
    
+
+    ValueComponent,
+    DeficePipe,
+    PipeTitelComponent,
+    ColorDirective
+
     
    
   ],
   imports: [
     BrowserModule,
     CommonModule,
+
     AppRoutingMobule
   ],
   providers: [
     SocialService
+
+    FormsModule
+
   ],
   bootstrap: [AppComponent]
 })
