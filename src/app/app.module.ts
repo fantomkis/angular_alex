@@ -16,6 +16,8 @@ import { HomeComponent } from './home/home.component';
 import { JustPeopleComponent } from './just-people/just-people.component';
 import { CloseFriendsComponent } from './close-friends/close-friends.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ReuseblaComponent } from './reusebla/reusebla.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -34,12 +36,9 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     JustPeopleComponent,
     PageNotFoundComponent,
     CloseFriendsComponent,
-   
-
-    ValueComponent,
     DeficePipe,
-    PipeTitelComponent,
-    ColorDirective
+    ReuseblaComponent,
+  
 
     
    
@@ -51,7 +50,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     AppRoutingMobule
   ],
   providers: [
-    SocialService
+    SocialService,
 
     FormsModule
 
