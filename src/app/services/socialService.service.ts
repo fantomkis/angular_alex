@@ -5,7 +5,7 @@ Injectable({
 })
 
     
- interface Social_list {
+ interface SocialList {
     family: {
         name: string;
         age: number;
@@ -36,7 +36,7 @@ export class SocialService{
     
     counter = 0;
     
-    social:Social_list = {
+    social:SocialList = {
        family: [
             { name: 'Юра', age: 44, prof: 'Bisnes', img: "../../assets/imeges/1.jpg" },
             { name: 'Даша', age: 42, prof: 'Mam', img: '../../assets/imeges/2.jpg' },

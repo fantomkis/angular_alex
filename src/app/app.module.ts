@@ -9,7 +9,7 @@ import { ChildComponent } from './child/child.component';
 import { DeficePipe } from './pipes/defices.pipe';
 import { SocialService } from './services/socialService.service';
 import { SociumComponent } from './socium/socium.component';
-import { AppRoutingMobule } from './social.module';
+
 import { FamilyComponent } from './family/family.component';
 import { FriendsComponent } from './friends/friends.component';
 import { HomeComponent } from './home/home.component';
@@ -18,6 +18,7 @@ import { CloseFriendsComponent } from './close-friends/close-friends.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ReuseblaComponent } from './reusebla/reusebla.component';
 import { FormsModule } from '@angular/forms';
+import { SocialMobule } from './socium/social.module';
 
 
 @NgModule({
@@ -30,14 +31,16 @@ import { FormsModule } from '@angular/forms';
 
     DeficePipe,
     SociumComponent,
-    FamilyComponent,
-    FriendsComponent,
-    HomeComponent,
-    JustPeopleComponent,
-    PageNotFoundComponent,
-    CloseFriendsComponent,
+    // FamilyComponent,
+    // FriendsComponent,
+    // HomeComponent,
+    // JustPeopleComponent,
+    // PageNotFoundComponent,
+    // CloseFriendsComponent,
     DeficePipe,
-    ReuseblaComponent,
+    // ReuseblaComponent,
+    
+
   
 
     
@@ -46,15 +49,16 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     CommonModule,
+    SocialMobule,
+    
 
-    AppRoutingMobule
+   
   ],
   providers: [
     SocialService,
-
-    FormsModule
+    FormsModule,
 
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent,]
 })
 export class AppModule { }
