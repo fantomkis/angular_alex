@@ -5,11 +5,21 @@ import { AppComponent } from './app.component';
 import { TitleComponent } from './title/title.component';
 import { NumberComponent } from './number/number.component';
 import { ChildComponent } from './child/child.component';
-import { ValueComponent } from './value/value.component';
+
+import { DeficePipe } from './pipes/defices.pipe';
+import { SocialService } from './services/socialService.service';
+import { SociumComponent } from './socium/socium.component';
+import { AppRoutingMobule } from './social.module';
+import { FamilyComponent } from './family/family.component';
+import { FriendsComponent } from './friends/friends.component';
+import { HomeComponent } from './home/home.component';
+import { JustPeopleComponent } from './just-people/just-people.component';
+import { CloseFriendsComponent } from './close-friends/close-friends.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ReuseblaComponent } from './reusebla/reusebla.component';
 import { FormsModule } from '@angular/forms';
-import { DeficePipe } from './pipes/defice.pipe';
-import { PipeTitelComponent } from './pipe-titel/pipe-titel.component';
-import { ColorDirective } from './directive/color.directive';
+
+
 @NgModule({
   exports: [NumberComponent],
   declarations: [
@@ -17,19 +27,34 @@ import { ColorDirective } from './directive/color.directive';
     TitleComponent,
     NumberComponent,
     ChildComponent,
-    ValueComponent,
+
     DeficePipe,
-    PipeTitelComponent,
-    ColorDirective
+    SociumComponent,
+    FamilyComponent,
+    FriendsComponent,
+    HomeComponent,
+    JustPeopleComponent,
+    PageNotFoundComponent,
+    CloseFriendsComponent,
+    DeficePipe,
+    ReuseblaComponent,
+  
+
     
    
   ],
   imports: [
     BrowserModule,
     CommonModule,
-    FormsModule
+
+    AppRoutingMobule
   ],
-  providers: [],
+  providers: [
+    SocialService,
+
+    FormsModule
+
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
