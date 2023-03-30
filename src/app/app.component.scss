@@ -1,0 +1,34 @@
+.navbar {
+    width: 100vw;
+    height: 80px;
+    background-color: red;
+    display: flex;
+    justify-content: space-around
+}
+
+.title {
+    color: burlywood;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.nav_list {
+    display: flex;
+    list-style: none;
+}
+
+.nav_item {
+    display: flex;
+}
+
+.nav_item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.nav_link {
+    color: aliceblue;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+}

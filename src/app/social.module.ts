@@ -1,12 +1,12 @@
 import { NgModule } from "@angular/core";
 import {  RouterModule, Routes } from "@angular/router";
-import { CloseFriendsComponent } from "../close-friends/close-friends.component";
+import { CloseFriendsComponent } from "./close-friends/close-friends.component";
 
-import { FamilyComponent } from "../family/family.component";
-import { FriendsComponent } from "../friends/friends.component";
-import { HomeComponent } from "../home/home.component";
-import { JustPeopleComponent } from "../just-people/just-people.component";
-import { PageNotFoundComponent } from "../page-not-found/page-not-found.component";
+import { FamilyComponent } from "./family/family.component";
+import { FriendsComponent } from "./friends/friends.component";
+import { HomeComponent } from "./home/home.component";
+import { JustPeopleComponent } from "./just-people/just-people.component";
+import { PageNotFoundComponent } from "./page-not-found/page-not-found.component";
 
 const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -18,10 +18,8 @@ const routes: Routes = [
 ]
 @NgModule({
     imports: [RouterModule.forRoot(routes)],
-    exports: [RouterModule,
-        RoutingMobule
-    ]
+    exports: [RouterModule]
 })
-export class RoutingMobule {
+export class AppRoutingMobule {
 
 }
